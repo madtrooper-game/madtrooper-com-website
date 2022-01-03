@@ -1,0 +1,29 @@
+.thumbs {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.carousel-root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-desc {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.image-wrapper {
+  font-size: 20px;
+  height: 80vh;
+  // width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+  }
+}

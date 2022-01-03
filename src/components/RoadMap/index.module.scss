@@ -1,0 +1,143 @@
+.roadmap-container {
+  display: flex;
+  padding: 40px 20px;
+  color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.roadmap-title {
+  font-size: 36px;
+  font-weight: bold;
+  flex: 1;
+  margin-top: 20px;
+
+  @media screen and (max-width: 960px) and (min-width: 769px) {
+    padding-top: 120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+.roadmap-item {
+  display: flex;
+  align-items: flex-start;
+
+  transition: 0.5s ease-in-out;
+
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  margin-bottom: 20px;
+  max-width: 600px;
+
+  .image {
+    width: 64px;
+    height: 64px;
+  }
+  .time {
+    color: #c471f5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    margin-bottom: 5px;
+    /* or 19px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .title {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+    /* or 19px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .description {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ffffff;
+    text-overflow: ellipsis;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@for $i from 1 through 7 {
+  .roadmap-item-#{$i} {
+    margin-left: calc(62px * #{$i});
+    animation-delay: 0.1s;
+
+    @media screen and (max-width: 960px) {
+      margin-left: 0px;
+    }
+  }
+}
+
+.decoration {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  opacity: 0.8;
+
+  @media screen and (max-width: 768px) {
+    top: 120px;
+    right: 20px;
+  }
+}
+
+.linkText {
+  font-family: "Exo2";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffbf86;
+  &:hover {
+    color: #ffbf86;
+    text-decoration: underline;
+  }
+}
+
+.wrapper {
+  background: rgb(3, 4, 8);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 4, 8, 1) 0%,
+    rgba(12, 13, 15, 1) 58%,
+    rgba(14, 14, 14, 1) 100%
+  );
+}

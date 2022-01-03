@@ -1,0 +1,116 @@
+import { container, primaryColor } from "assets/jss/material-kit-react.js";
+
+const footerStyle = {
+  termOfUse: {
+    padding: "0.9375rem",
+    fontWeight: "normal",
+    fontSize: "16px",
+    lineHeight: "150%",
+    fontFamily: "Exo",
+    borderRadius: "3px",
+    textDecoration: "none",
+    position: "relative",
+    display: "block",
+    color: "white",
+  },
+
+  copyright: {
+    display: "flex",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "Exo",
+    fontSize: "16px",
+    lineHeight: "150%",
+    fontWeight: "normal",
+    color: "white",
+    padding: "15px 0",
+    margin: "0",
+  },
+  footer: {
+    backgroundColor: "#0F0332",
+    color: "white",
+    padding: "0.9375rem 0",
+    textAlign: "center",
+    display: "flex",
+    zIndex: "2",
+    position: "relative",
+  },
+  a: {
+    color: primaryColor,
+    textDecoration: "none",
+    backgroundColor: "transparent",
+    marginLeft: "10px",
+    fontWeight: "700",
+  },
+  footerWhiteFont: {
+    fontSize: "16px",
+    fontFamily: "Exo",
+    fontWeight: 400,
+    lineHeight: "24px",
+    "&,&:hover,&:focus": {
+      color: "#FFFFFF",
+    },
+  },
+  container,
+  list: {
+    marginBottom: "0",
+    padding: "0",
+    marginTop: "0",
+  },
+  inlineBlock: {
+    display: "inline-block",
+    padding: "0px",
+    width: "auto",
+  },
+  icon: {
+    width: "24px",
+    height: "24px",
+    position: "relative",
+    top: "3px",
+  },
+  footerContent: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Exo",
+    fontSize: "16px",
+    color: "white",
+    paddingBottom: "30px",
+    paddingTop: "20px",
+    alignItems: "center",
+    "@media screen and (max-width: 800px)": {
+      display: "flex",
+      flexDirection: "column",
+    },
+  },
+  mobileContainer: {
+    "@media screen and (max-width: 480px)": {
+      display: "flex",
+      flexDirection: "column",
+    },
+  },
+
+  buynow: {
+    color: "inherit",
+    position: "relative",
+    padding: "12px 32px",
+    fontWeight: "900",
+    fontSize: "14px",
+    fontFamily: "Exo",
+    fontStyle: "normal",
+    textTransform: "uppercase",
+    borderRadius: "8px",
+    lineHeight: "14px",
+    textDecoration: "none",
+    margin: "0px",
+    marginLeft: "20px",
+    display: "inline-flex",
+    backgroundColor: "white",
+    color: "#A93BC0",
+    "&:hover,&:focus": {
+      color: "#A93BC0",
+      opacity: 0.9,
+    },
+  },
+};
+export default footerStyle;

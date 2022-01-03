@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 160px 0px 160px;
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    padding: 0px 80px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    .title {
+      // flex: 1;
+      font-size: 64px;
+      color: #fff;
+      line-height: 64px;
+      padding-right: 20px;
+      flex-basis: calc(50% - 40px);
+
+      .light-text {
+        font-weight: 300;
+        font-size: 72px;
+        font-style: normal;
+        line-height: 79.2%;
+        margin-bottom: 20px;
+      }
+
+      .bold-text {
+        font-weight: 900;
+        font-size: 72px;
+        font-style: normal;
+        line-height: 79.2%;
+      }
+    }
+
+    .text {
+      flex-basis: calc(50% - 40px);
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      font-weight: 400;
+      font-style: normal;
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+
+  .carousel {
+    margin: 40px 0;
+  }
+
+  .p2 {
+    color: #fff;
+    font-size: 14x;
+    text-align: center;
+    line-height: 21px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .third {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .discordButton {
+    background-color: #a93bc0;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .instaButton {
+    background-color: #a93bc0;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .twitterButton {
+    background-color: #a93bc0;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .social-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 0px 40px 0px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    .email {
+      flex-basis: calc(50% - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .discord {
+      flex-basis: calc(50% - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-left: 20px;
+
+      button {
+        margin: 0 !important;
+      }
+    }
+  }
+}

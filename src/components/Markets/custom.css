@@ -1,0 +1,28 @@
+.rhap_container {
+  background-color: transparent !important;
+  padding: 12px 0px !important;
+}
+
+.rhap_progress-container {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rhap_time {
+  color: #fff;
+}
+
+.rhap_play-pause-button {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .rhap_current-time {
+    display: none;
+  }
+
+  .rhap_container {
+    padding: 12px !important;
+  }
+}

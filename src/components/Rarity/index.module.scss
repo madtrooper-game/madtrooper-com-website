@@ -1,0 +1,235 @@
+.containerWrapper {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/BG.png") #000;
+}
+.container {
+
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 0px 100px 0px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 960px) {
+    padding: 20px 0px 160px 0px;
+  }
+
+  .upper {
+    margin-bottom: 10px;
+
+    .headline {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      .content {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 52.8px;
+        color: #fff;
+        @media screen and (max-width: 960px) {
+          font-size: 32px;
+          line-height: 35.2px;
+        }
+      }
+    }
+  }
+
+  .inputContainer {
+    border: solid;
+    border-color: #5639ed;
+    border-width: 3px;
+    height: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    max-width: 00px;
+    align-items: center;
+    padding-bottom: 20px;
+    border: none;
+    color: white;
+
+    @media screen and (max-width: 960px) {
+      // width: 80%;
+      margin: 20px auto;
+      min-width: 350px;
+    }
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-grow: 1 1;
+    display: flex;
+    margin: 18px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    perspective: 1000px;
+    box-shadow: 0px 4px 42px rgba(169, 59, 192, 0.35);
+
+  }
+
+  .input {
+    border: 0;
+    font-family: Exo2;
+    height: 50px;
+    flex: 2;
+    max-width: 600px;
+    padding-inline-start: 20px;
+    color: white;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @media screen and (max-width: 960px) {
+      font-size: 16px;
+      max-width: 400px;
+    }
+
+    &::placeholder {
+      font-family: Exo;
+      color: white;
+    }
+  }
+
+  .button {
+    font-family: Exo2;
+    max-width: 240px;
+    min-width: 100px;
+    background-color: #a93bc0;
+    border: 0;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 0px 8px 8px 0px;
+    @media screen and (max-width: 960px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+      padding: 4px;
+      min-width: 60px;
+    }
+  }
+
+  .traitTitle {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+
+  }
+
+  .traitValue {
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  .rarityText {
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  .rarityValue {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+
+  }
+
+  .itemList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+
+    @media screen and (max-width: 960px) {
+      padding: 0;
+      margin-top: 50px !important;
+    }
+
+    .item {
+      width: 150px;
+      height: 150px;
+      color: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      flex-grow: 1 1;
+      display: flex;
+      margin: 20px;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      position: relative;
+      perspective: 1000px;
+      box-shadow: 0px 4px 42px rgba(169, 59, 192, 0.35);
+    }
+  }
+
+  .attrListContainer {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (max-width: 960px) {
+      padding: 0;
+      margin-top: 50px !important;
+      padding-left: 20px;
+    }
+  }
+
+  .attrContainer {
+    min-width: 200px;
+    margin: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    min-width: 350px;
+    max-width: 400px;
+  }
+
+}
+

@@ -1,0 +1,50 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 160px 0px 40px 0px;
+
+  @media screen and (max-width: 960px) {
+    padding: 80px 0px 40px 0px;
+  }
+
+  .upper {
+    margin-bottom: 80px;
+
+    .headline {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      .content {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 52.8px;
+        color: #fff;
+
+        @media screen and (max-width: 960px) {
+          font-size: 32px;
+          line-height: 35.2px;
+        }
+      }
+
+      .bold {
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+
+    .description {
+      font-size: 24px;
+      line-height: 36px;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+
+      @media screen and (max-width: 960px) {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}

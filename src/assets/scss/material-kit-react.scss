@@ -1,0 +1,71 @@
+/*!
+
+ =========================================================
+ * Material Kit React v1.10.0 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition)
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit-react
+ * Copyright 2021 Creative Tim (https://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
+
+ * Coded by Creative Tim
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+@import "core/variables";
+@import "core/mixins";
+
+// Core Components
+@import "core/misc";
+
+// Core Plugins
+
+// @import "plugins/plugin-datetime-picker";
+@import "plugins/plugin-nouislider";
+@import "plugins/plugin-react-datetime";
+@import "plugins/plugin-react-slick";
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-ExtraBold.ttf");
+  font-weight: 900;
+}

@@ -1,0 +1,77 @@
+.form {
+  border: solid;
+  border-color: #5639ed;
+  border-width: 3px;
+  height: 100px;
+  background-color: black;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 300px;
+  // max-width: 600px;
+  border: none;
+  font-weight: 700;
+  color: white;
+
+  .email {
+    border: 0;
+    font-family: Exo2;
+    height: 50px;
+    flex: 2;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px 8px 0px 0px;
+    @media screen and (max-width: 960px) {
+      font-size: 16px;
+    }
+    width: 100%;
+    text-align: center;
+    // background-color: gray;
+
+    &::placeholder {
+      color: white;
+      font-family: Exo;
+      font-size: 16px;
+      line-height: 120%;
+      opacity: 1; /* Firefox */
+  }
+  }
+
+  .email-btn {
+    font-family: Exo2;
+    background-color: #a93bc0;
+    border: 0;
+    padding: 8px 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+
+.success {
+  height: 68px;
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  color: #5639ed;
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 300px;
+
+  @media screen and (max-width: 960px) {
+    // width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.disable {
+  opacity: 0.7;
+}

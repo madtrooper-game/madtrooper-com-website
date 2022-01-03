@@ -1,0 +1,177 @@
+.container {
+  height: 400px;
+  width: 960px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+  margin: 0 auto;
+  border: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  position: relative;
+}
+
+.carousel {
+  height: 364px;
+  width: 364px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  margin: 0 auto;
+  // border: none;
+  border-radius: 50%;
+}
+
+.desc {
+  font-family: "Exo2";
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.carousel-item {
+  display: block;
+  position: absolute;
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+  width: 364px;
+  height: 364px;
+  // border: none;
+  border-radius: 50%;
+  // text-align: center;
+  color: #fff;
+  opacity: 0.95;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  filter: blur(15px);
+  animation: myBlur 1s;
+  // transition: 0.5s filter linear;
+  // filter: drop-shadow(0px, 7px, 40px, rgba(0, 0, 0, 0.25));
+  img {
+    width: 364px;
+    height: 364px;
+    border-radius: 50%;
+  }
+}
+
+.arrow {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-left {
+  top: 0px;
+  left: 0px;
+}
+
+.arrow-right {
+  top: 0px;
+  right: 0px;
+}
+
+.carousel-item-1 {
+  transform: translate3d(0, 0, 100px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item-2 {
+  transform: translate3d(-300px, 0, -300px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item-3 {
+  transform: translate3d(-150px, 0, -600px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item-4 {
+  transform: translate3d(150px, 0, -600px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item-5 {
+  transform: translate3d(300px, 0, -300px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.active {
+  filter: blur(0px);
+  box-shadow: 0px 0px 40px 18px #a93bc059;
+  transition: 1.5s filter preserve-3d;
+  animation: myUnBlur 1s;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 30px auto 0px auto;
+  align-items: center;
+  .activeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .number {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.active-indicator {
+  border: solid 2px #a93bc0;
+  width: 50px;
+  height: 1px;
+}
+
+@keyframes myBlur {
+  0% {
+    filter: blur(0px);
+  }
+  33% {
+    filter: blur(5px);
+  }
+  66% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(15px);
+  }
+}
+
+@keyframes myUnBlur {
+  0% {
+    filter: blur(15px);
+  }
+  33% {
+    filter: blur(10px);
+  }
+  66% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+// box-shadow: 0px 7px 40px 8px #00000040;
+
+// box-shadow: 0px 0px 72px 18px #A93BC059;
